@@ -38,7 +38,7 @@
             <p>Rich and bold, the perfect shot of coffee.</p>
         </div>
         <div class="product">
-            <img src="img/latte.png" alt="Latte">
+            <img src="img/latte1.png" alt="Latte">
             <h3>Latte</h3>
             <p>Silky smooth with a hint of creaminess.</p>
         </div>
@@ -61,9 +61,41 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or feedback? Reach out to us...</p>
+        <h1>Contact Us</h1>
+        <div class="info">
+            <p><strong>Address:</strong> 123 Coffee Lane, Brewtown, USA</p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@cozycafe.com">info@cozycafe.com</a></p>
+        </div>
     </section>
+
+    <section id="contact-form" class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="map" class="map">
+        <h2>Our Location</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434508616!2d-122.41941568468105!3d37.774929279759275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df35a1b3%3A0x6c1b7a5a31b194f4!2s123%20Coffee%20Lane%2C%20Brewtown%2C%20USA!5e0!3m2!1sen!2sus!4v1618871055775!5m2!1sen!2sus" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+    <!-- End of Highlighted Section -->
+
 
     <footer>
         <div class="footer-links">

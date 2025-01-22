@@ -259,13 +259,15 @@ footer {
 }
 
 .contact-info .info a {
-    color: #007BFF;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .contact-info .info a:hover {
     text-decoration: underline;
 }
+
+
 
 /* Contact Form Styling */
 .contact-form h2 {

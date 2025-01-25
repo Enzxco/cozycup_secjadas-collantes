@@ -222,9 +222,19 @@ footer {
 }
 
 .product h3 {
-    margin: 15px 0;
+    margin: 15px 15px;
     font-size: 1.5rem;
     color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product h3 .price {
+    font-size: 1rem;
+    color: #777;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 .product p {
@@ -309,7 +319,7 @@ footer {
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #4c3c32;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -318,7 +328,7 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: #7e685b;
 }
 
 /* Map Section */

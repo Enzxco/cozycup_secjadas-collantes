@@ -25,6 +25,7 @@ nav {
 
 .logo img {
     max-width: 100px;
+    max-height: 85px;
 }
 
 nav ul {
@@ -47,8 +48,6 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 150px 0;
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
     color: white;
 }
 
@@ -60,6 +59,14 @@ nav a:hover {
 .hero p {
     font-size: 18px;
     margin-bottom: 40px;
+}
+
+.hero .tagline {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #f8e9d8; /* A soft complementary color */
+    font-style: italic; /* Optional for a relaxed vibe */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
 }
 
 .cta-button {

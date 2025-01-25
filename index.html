@@ -14,7 +14,7 @@
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="#featured-products">Menu</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -30,13 +30,31 @@
         <h1>Welcome to CozyCup Café</h1>
         <p class="tagline">Sip, Relax, Repeat.</p>   
         <p>Discover Your Perfect Brew</p>
-        <a href="#menu" class="cta-button">Explore Menu</a>
+        <a href="#featured-products" class="cta-button">Explore Menu</a>
     </section>
 
-    <section id="menu" class="menu">
-        <h2>Our Menu</h2>
-        <!-- Add menu items here -->
-    </section>
+<!-- Featured Products Section -->
+<section id="featured-products" class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="img/coffee.png" alt="Espresso">
+            <h3>Espresso <span class="price">$3.50</span></h3>
+            <p>Rich and bold, the perfect shot of coffee.</p>
+        </div>
+        <div class="product">
+            <img src="img/latte1.png" alt="Latte">
+            <h3>Latte <span class="price">$4.00</span></h3>
+            <p>Silky smooth with a hint of creaminess.</p>
+        </div>
+        <div class="product">
+            <img src="img/croissant.png" alt="Croissant">
+            <h3>Butter Croissant <span class="price">$2.75</span></h3>
+            <p>Freshly baked, flaky, and buttery.</p>
+        </div>
+    </div>
+    <a href="#featured-products" class="product-cta-button">Show More</a>
+</section>
 
     <section id="about" class="about">
         <h2>Our Story</h2>
@@ -71,11 +89,64 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or feedback? Reach out to us...</p>
+        <h1>Contact Us</h1>
+        <div class="info">
+            <p class="contact-address"><strong>Address:</strong> 123 Coffee Lane, Brewtown, USA</p>
+            <div class="contact-p">
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Email:</strong> info@cozycafe.com</p>
+            </div>
+        </div>
     </section>
 
+    <section id="contact-form" class="contact-form">
+        <h2>Message Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="map" class="map">
+        <h2>Our Location</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434508616!2d-122.41941568468105!3d37.774929279759275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df35a1b3%3A0x6c1b7a5a31b194f4!2s123%20Coffee%20Lane%2C%20Brewtown%2C%20USA!5e0!3m2!1sen!2sus!4v1618871055775!5m2!1sen!2sus" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+    <!-- End of Highlighted Section -->
+
+
     <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="img/fb.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <img src="img/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="img/Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
         <p>&copy; 2023 CozyCup Café. All rights reserved.</p>
     </footer>
 </body>
